@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -50,6 +52,10 @@ export default {
       console.log('msg', msg);
       return msg;
     };
+
+    axios.get("/smpl").then((res) => {
+      console.log("axios 호출 res :: ", res);
+    });
 
     return {
       greeting,
