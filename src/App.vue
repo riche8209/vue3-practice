@@ -1,16 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <Practice_1/>
+  <Practice/>
 </template>
 
 <script>
-import Practice_1 from './components/Practice_1.vue'
+import Practice from './components/Practice_5.vue'
 
 export default {
   name: 'App',
   components: {
-    Practice_1
+    Practice
   }
 }
 </script>
